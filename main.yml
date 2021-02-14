@@ -1,0 +1,11 @@
+- hosts: all
+
+  tasks:
+
+    - name: Run ls to test connection and ability
+      shell: ls -latr /tmp 
+      register: lsout
+
+    - debug: msg="{{ lsout.stdout }}"
+
+    - debug: msg="{{ lsout.stderr }}"
