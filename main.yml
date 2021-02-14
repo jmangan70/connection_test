@@ -1,4 +1,4 @@
-- hosts: vns
+- hosts: centos
 
   tasks:
 
