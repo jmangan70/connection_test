@@ -10,10 +10,6 @@
 
     - debug: msg="{{ lsout.stderr }}"
 
-    - name: Install the latest version of named
-      yum:
-        name: bind bind-chroot caching-nameserver
-        state: latest
     handlers:
       - name: restart named.service
         service: name=named.service state=restarted
