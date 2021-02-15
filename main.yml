@@ -9,7 +9,3 @@
     - debug: msg="{{ lsout.stdout }}"
 
     - debug: msg="{{ lsout.stderr }}"
-
-    handlers:
-      - name: restart named.service
-        service: name=named.service state=restarted
