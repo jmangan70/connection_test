@@ -3,7 +3,7 @@
   tasks:
 
     - name: Run ls to test connection and ability
-      shell: ls -latr /tmp 
+      shell: sudo cat /var/named/chroot/etc/named.forwards 
       register: lsout
 
     - debug: msg="{{ lsout.stdout }}"
